@@ -1,0 +1,97 @@
+/* Thiết lập cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.game {
+    text-align: center;
+}
+
+#trash {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.bins {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bins button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bins button:hover {
+    background-color: #45a049;
+}
+
+/* Bảng xếp hạng */
+#leaderboard {
+    list-style: none;
+    padding: 0;
+}
+
+#leaderboard li {
+    margin: 5px 0;
+    font-size: 18px;
+}
+#leaderboard {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#leaderboard li {
+    margin: 10px 0;
+    font-size: 18px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#leaderboard li:nth-child(odd) {
+    background-color: #e6ffe6;
+}
+
+#leaderboard li:nth-child(even) {
+    background-color: #f9f9f9;
+}
