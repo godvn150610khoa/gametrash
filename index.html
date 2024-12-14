@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trò chơi Phân loại Rác</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trò chơi Phân loại Rác</h1>
+        <div class="info">
+            <p id="timer">Thời gian: 60s</p>
+            <p id="score">Điểm: 0</p>
+        </div>
+    </header>
+    <main>
+        <!-- Màn hình nhập tên -->
+        <div id="start-screen">
+            <h2>Chào mừng!</h2>
+            <input type="text" id="player-name" placeholder="Nhập tên của bạn" />
+            <button onclick="startGame()">Bắt đầu chơi</button>
+        </div>
+
+        <!-- Màn hình trò chơi -->
+        <div id="game-screen" class="hidden">
+            <div class="game">
+                <p id="trash">Đang tải...</p>
+                <div class="bins">
+                    <button onclick="checkTrash('plastic')">Nhựa</button>
+                    <button onclick="checkTrash('organic')">Hữu cơ</button>
+                    <button onclick="checkTrash('glass')">Thủy tinh</button>
+                    <button onclick="checkTrash('paper')">Giấy</button>
+                    <button onclick="checkTrash('metal')">Kim loại</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Màn hình bảng xếp hạng -->
+        <div id="leaderboard-screen" class="hidden">
+            <h2>Bảng xếp hạng</h2>
+            <ul id="leaderboard"></ul>
+            <button onclick="restartGame()">Chơi lại</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
